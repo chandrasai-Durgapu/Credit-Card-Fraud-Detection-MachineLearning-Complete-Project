@@ -30,3 +30,31 @@ pip install -r requirements.txt
 https://dagshub.com/chandrasekharcse522/Credit-Card-Fraud-Detection-MachineLearning-Complete-Project.mlflow/#/experiments/0?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D
 ```
 
+---
+## Note
+
+Option 1: Use Git Large File Storage (Git LFS)
+
+Install Git LFS:
+```bash
+git lfs install
+```
+
+Track the large file:
+```bash
+git lfs track "creditcard.csv"
+```
+
+Commit the .gitattributes change:
+```bash
+git add .gitattributes
+git commit -m "Track creditcard.csv with Git LFS"
+```
+
+Re-add the CSV file and push:
+```bash
+git add creditcard.csv
+git commit -m "Add large dataset with LFS"
+git push origin main
+```
+---
