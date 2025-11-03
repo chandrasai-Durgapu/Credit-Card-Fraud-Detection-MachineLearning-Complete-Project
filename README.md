@@ -47,14 +47,18 @@ git lfs track "creditcard.csv"
 
 Commit the .gitattributes change:
 ```bash
+
 git add .gitattributes
-git commit -m "Track creditcard.csv with Git LFS"
+git add creditcard.csv
+git add README.md  # and any other changes
 ```
 
 Re-add the CSV file and push:
 ```bash
-git add creditcard.csv
-git commit -m "Add large dataset with LFS"
+git commit -m "Add creditcard.csv via Git LFS and update README"
 git push origin main
+```
+```bash
+git config --global http.postBuffer 524288000
 ```
 ---
